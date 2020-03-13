@@ -172,14 +172,15 @@ function appleIndex(arr) {
  * the returned value should be: [ false, true, false, false, true, false ].
 */
 function isItAnApple(arr) {
+  const isItTrue = [];
   for (var i=0; i < arr.length; i++){
     if (arr[i] == "apple") {
-      arr[i] = true;
+      isItTrue.push(true);
     } else {
-      arr[i] = false;
+      isItTrue.push(false);
     }
   }
-  return arr;
+  return isItTrue;
 }
 
 
